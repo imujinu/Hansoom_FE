@@ -1,0 +1,456 @@
+<template>
+  <div id="wrap" class="main tht">
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo" aria-label="THE HYUNDAI TRAVEL">
+        <span class="thtBi" />
+      </a>
+      <nav class="gnb" aria-label="global">
+        <a href="#" class="on">항공</a>
+        <a href="#">호텔</a>
+        <a href="#">프리미엄 호텔</a>
+        <a href="#">유럽철도</a>
+        <a href="#">패키지</a>
+        <a href="#">기획전</a>
+        <a href="#">혜택</a>
+      </nav>
+      <div class="utill">
+        <div class="btn">
+          <a href="#" class="mypage icon" aria-label="마이페이지" />
+          <a href="#" class="csCenter" aria-label="고객센터" />
+          <a href="#" class="allMenu icon" aria-label="전체메뉴" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Visual (Video Background) -->
+    <section class="mainVisual">
+      <div class="visualArea">
+        <div class="visual">
+          <div class="roll video on">
+            <!-- NOTE: put the mp4 under /public and keep the absolute path below -->
+            <video autoplay loop muted playsinline preload="auto" poster="" class="bgVideo">
+              <source src="/GettyImages-1308137686_1655877776450_00ff.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- decorative frame & indicator (static) -->
+          <div class="frame">
+            <p class="rec" aria-hidden="true" />
+            <div class="indiBox" aria-hidden="true">
+              <div class="pageIndi">
+                <span class="current">01</span>
+                <span class="all">05</span>
+              </div>
+              <div class="control">
+                <button class="prev" aria-label="이전" />
+                <button class="pause" aria-label="일시정지" />
+                <button class="next" aria-label="다음" />
+              </div>
+              <div class="barDiv"><p style="width: 85%" /></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Box (static layout only) -->
+        <div id="airSearchWrap" class="tripPlanArea main">
+          <p class="ai-banner">
+            <a href="#"><img src="https://via.placeholder.com/1180x120?text=AI+Banner" alt="AI 배너" /></a>
+          </p>
+          <div class="browseBox">
+            <div class="tripPlan showTab">
+              <a class="tit on">왕복</a>
+              <a class="tit">편도</a>
+              <a class="tit">다구간</a>
+              <div class="filterCheck">
+                <label class="chkBox">
+                  <input type="checkbox" />
+                  <span>직항만</span>
+                </label>
+              </div>
+            </div>
+            <div class="tabCon">
+              <div class="tripPlanCon showCon">
+                <div class="infoDiv">
+                  <div class="info where">
+                    <span class="iTxt depaPlace">
+                      <input type="text" placeholder="출발지" readonly value="" class="filled" />
+                    </span>
+                    <span class="midIcon round" />
+                    <span class="iTxt arriPlace noData">
+                      <input type="text" placeholder="도착지" readonly />
+                    </span>
+                  </div>
+                  <div class="info when">
+                    <span class="iTxt depaDate">
+                      <span class="data"><i class="date">가는날</i> <strong class="day" /></span>
+                      <span class="placeholder">가는날</span>
+                    </span>
+                    <span class="midIcon">~</span>
+                    <span class="iTxt arriDate">
+                      <span class="data"><i class="date">오는날</i> <strong class="day" /></span>
+                      <span class="placeholder">오는날</span>
+                    </span>
+                  </div>
+                  <div class="info whom">
+                    <span class="iTxt chosed">
+                      <span class="data"><i class="num">1</i>명 / <strong class="type">일반석</strong></span>
+                      <span class="placeholder">인원, 좌석 선택</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="icon find" aria-hidden="true" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommend -->
+    <section class="recommendD">
+      <div class="inner">
+        <div class="textMotionD">
+          <div class="motionTit textD">
+            <p><span>더 특별한 혜택</span>으로 <br />미리 항공권을 구매하세요!</p>
+          </div>
+          <p class="line" />
+        </div>
+
+        <div class="listDiv">
+          <a class="list" href="#">
+            <div class="motion">
+              <div class="img imgResize reverse">
+                <img src="https://via.placeholder.com/560x380?text=FUKUOKA" alt="후쿠오카" />
+              </div>
+              <div class="txtArea">
+                <p class="country">후쿠오카</p>
+                <p class="price"><i>112,200</i> 원~</p>
+              </div>
+              <div class="hover">
+                <p class="loca">인천 출발</p>
+                <p class="type">왕복ㆍ직항</p>
+                <p class="country">후쿠오카</p>
+                <p class="price"><i>112,200</i> 원~</p>
+              </div>
+            </div>
+          </a>
+          <a class="list" href="#">
+            <div class="motion">
+              <div class="img imgResize reverse">
+                <img src="https://via.placeholder.com/560x380?text=SHANGHAI" alt="상해" />
+              </div>
+              <div class="txtArea">
+                <p class="country">상해</p>
+                <p class="price"><i>148,900</i> 원~</p>
+              </div>
+              <div class="hover">
+                <p class="loca">인천 출발</p>
+                <p class="type">왕복ㆍ직항</p>
+                <p class="country">상해</p>
+                <p class="price"><i>148,900</i> 원~</p>
+              </div>
+            </div>
+          </a>
+          <a class="list" href="#">
+            <div class="motion">
+              <div class="img imgResize reverse">
+                <img src="https://via.placeholder.com/560x380?text=SAPPORO" alt="삿포로" />
+              </div>
+              <div class="txtArea">
+                <p class="country">삿포로</p>
+                <p class="price"><i>163,400</i> 원~</p>
+              </div>
+              <div class="hover">
+                <p class="loca">인천 출발</p>
+                <p class="type">왕복ㆍ직항</p>
+                <p class="country">삿포로</p>
+                <p class="price"><i>163,400</i> 원~</p>
+              </div>
+            </div>
+          </a>
+          <a class="list" href="#">
+            <div class="motion">
+              <div class="img imgResize reverse">
+                <img src="https://via.placeholder.com/560x380?text=BANGKOK" alt="방콕" />
+              </div>
+              <div class="txtArea">
+                <p class="country">방콕</p>
+                <p class="price"><i>188,700</i> 원~</p>
+              </div>
+              <div class="hover">
+                <p class="loca">인천 출발</p>
+                <p class="type">왕복ㆍ직항</p>
+                <p class="country">방콕</p>
+                <p class="price"><i>188,700</i> 원~</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotion (static) -->
+    <section class="promotionD">
+      <div class="inner">
+        <div class="textMotionD">
+          <div class="motionTit textD">
+            <p>즐거운 여행을 위한 <br /><span>다양한 프로모션</span>을 확인하세요</p>
+          </div>
+          <p class="line" />
+          <a href="#" class="viewMore" aria-label="더보기" />
+        </div>
+        <div class="topD">
+          <div class="visualD">
+            <div class="visual imgResize reverse">
+              <a href="#"><img src="https://via.placeholder.com/1180x480?text=Promotion+1" alt="프로모션" /></a>
+            </div>
+          </div>
+          <div class="tabs">
+            <a class="on" href="#"><p class="thumb imgResize reverse"><img src="https://via.placeholder.com/120x90?text=Thumb" alt="썸네일" /></p><p class="txt">제주항공</p></a>
+            <a href="#"><p class="thumb imgResize reverse"><img src="https://via.placeholder.com/120x90?text=Thumb" alt="썸네일" /></p><p class="txt">이스타항공</p></a>
+            <a href="#"><p class="thumb imgResize reverse"><img src="https://via.placeholder.com/120x90?text=Thumb" alt="썸네일" /></p><p class="txt">SAS</p></a>
+            <a href="#"><p class="thumb imgResize reverse"><img src="https://via.placeholder.com/120x90?text=Thumb" alt="썸네일" /></p><p class="txt">에어캐나다</p></a>
+            <a href="#"><p class="thumb imgResize reverse"><img src="https://via.placeholder.com/120x90?text=Thumb" alt="썸네일" /></p><p class="txt">아시아나</p></a>
+          </div>
+        </div>
+        <div class="bottomD">
+          <div class="rollDiv leftD">
+            <div class="motion">
+              <a href="#"><img src="https://via.placeholder.com/630x400?text=Banner+Left" alt="배너" /></a>
+            </div>
+          </div>
+          <div class="rollDiv rightD">
+            <div class="motion">
+              <a href="#"><img src="https://via.placeholder.com/630x400?text=Banner+Right" alt="배너" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notice & QnA -->
+    <section class="noticeD">
+      <div class="inner">
+        <div class="noticeDiv area">
+          <p class="title">알려드립니다.</p>
+          <p class="line" />
+          <a href="#" class="viewMore" aria-label="더보기" />
+          <div class="listDiv">
+            <a href="#" class="list"><p class="tit">8/11 H.Point 서버 점검에 따른 사용불가 안내</p><i class="date">2025-08-06</i></a>
+            <a href="#" class="list"><p class="tit">2025년 08월 유류할증료인상 안내</p><i class="date">2025-07-29</i></a>
+            <a href="#" class="list"><p class="tit">대만 입국신고서 안내</p><i class="date">2025-07-22</i></a>
+            <a href="#" class="list"><p class="tit">울란바타르공항 출발 승객 대상 기내 보조배터리 반입 제한 안내</p><i class="date">2025-07-18</i></a>
+          </div>
+        </div>
+        <div class="qnaDiv area">
+          <p class="title">도와드릴까요?</p>
+          <p class="line" />
+          <a href="#" class="viewMore" aria-label="더보기" />
+          <div class="listDiv">
+            <a href="#" class="list"><span class="type">기타문의</span><p class="txt">발권 완료 후, 여권 정보 수정은 어디서 하나요?</p></a>
+            <a href="#" class="list"><span class="type">예약</span><p class="txt">예약시 영문이름이 여권과 달라도 상관없나요?</p></a>
+            <a href="#" class="list"><span class="type">변경/취소/환불</span><p class="txt">결항 또는 지연된 항공권의 경우 환불 가능한가요?</p></a>
+            <a href="#" class="list"><span class="type">예약</span><p class="txt">여권과 항공권의 영문 띄어쓰기, 하이픈(-) 표시가 다른 경우에도 똑같이 수정해야 하나요?</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <div class="topD">
+          <div class="inquiryD">
+            <p>고객센터 (평일 09:00 ~ 16:00 / 주말 및 공휴일 휴무)</p>
+            <div>
+              <a href="#">
+                항공/호텔/패키지 문의 <i class="callCenter">1811-0889</i>
+                <span class="btnTxt">자주 찾는 질문</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footUtill">
+          <a href="#">이용약관</a>
+          <a href="#">국외여행약관</a>
+          <a href="#">국내여행약관</a>
+          <a href="#" class="bold">개인정보처리방침</a>
+          <a href="#">업무위탁현황</a>
+          <a href="#">이메일 무단 수집거부</a>
+        </div>
+
+        <div class="infoD">
+          <p>
+            <span>서울특별시 서대문구 충정로 23 현대드림투어</span>
+            <span>사업자등록번호 : 105-86-90908</span>
+            <span>대표이사 : 박종선</span>
+          </p>
+          <p>
+            <span>통신판매신고번호 : 2023-서울서대문-0187</span>
+            <span>관광사업자 등록번호 : 제26004-2022-000017호</span>
+            <span>개인정보 보호책임자 : 김기홍</span>
+          </p>
+          <p class="footLogo" aria-hidden="true" />
+        </div>
+
+        <p class="copy">
+          <a class="csMail" href="mailto:thtcs@hyundaidreamtour.com">thtcs@hyundaidreamtour.com</a>
+          COPYRIGHT HYUNDAI DREAM TOUR ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script setup>
+// static template only – no JS needed
+</script>
+
+<style scoped>
+/* ----- Base / Reset-ish ----- */
+.tht, .tht * { box-sizing: border-box; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { background: none; border: 0; cursor: pointer; }
+:root {
+  --max: 1180px;
+  --black: #111;
+  --text: #222;
+  --mute: #666;
+  --line: #e9e9ec;
+  --brand: #111; /* deep gray like original */
+}
+
+/* ----- Header ----- */
+.header{ position:fixed; inset:0 0 auto 0; height:72px; display:flex; align-items:center; gap:32px; padding:0 28px; z-index:10; color:#fff; }
+.header::before{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0)); pointer-events:none; }
+.header .logo{ position:relative; display:flex; align-items:center; z-index:1; }
+.thtBi{ width:180px; height:24px; display:block; background:linear-gradient(90deg,#fff,#ddd); mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); border-radius:2px; padding:2px 0; }
+.gnb{ position:relative; display:flex; gap:22px; z-index:1; }
+.gnb a{ font-size:.95rem; letter-spacing:-.02em; opacity:.85; padding:8px 6px; }
+.gnb a.on{ opacity:1; font-weight:700; border-bottom:2px solid #fff; }
+.utill{ margin-left:auto; position:relative; z-index:1; }
+.utill .btn{ display:flex; gap:12px; align-items:center; }
+.utill .icon{ width:28px; height:28px; background:rgba(255,255,255,.8); border-radius:50%; }
+.utill .csCenter{ width:28px; height:28px; display:inline-block; background:rgba(255,255,255,.5); border-radius:50%; }
+
+/* ----- Hero / Video ----- */
+.mainVisual{ position:relative; min-height:100vh; background:#000; color:#fff; }
+.visualArea{ position:relative; height:100vh; }
+.visual{ position:absolute; inset:0; }
+.bgVideo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:saturate(1.05); }
+.frame{ position:absolute; inset:auto 0 8% 0; height:360px; display:flex; align-items:flex-end; justify-content:center; pointer-events:none; }
+.rec{ position:absolute; inset:auto 0 0 0; height:100%; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.35) 100%); }
+.indiBox{ position:relative; width:var(--max); max-width:calc(100% - 48px); display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.pageIndi{ display:flex; align-items:flex-end; gap:8px; font-weight:700; }
+.pageIndi .current{ font-size:2.25rem; line-height:1; }
+.pageIndi .all{ font-size:1rem; opacity:.8; }
+.control{ display:flex; gap:8px; }
+.control .prev,.control .next{ width:42px; height:42px; border-radius:50%; background:rgba(255,255,255,.18); backdrop-filter: blur(2px); position:relative; }
+.control .prev::before{ content:""; position:absolute; inset:0; margin:auto; width:10px; height:10px; border-left:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(45deg); }
+.control .next::before{ content:""; position:absolute; inset:0; margin:auto; width:10px; height:10px; border-right:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg); }
+.control .pause{ width:42px; height:42px; border-radius:50%; background:rgba(255,255,255,.18); position:relative; }
+.control .pause::before, .control .pause::after{ content:""; position:absolute; top:10px; bottom:10px; width:4px; background:#fff; }
+.control .pause::before{ left:14px; } .control .pause::after{ right:14px; }
+.barDiv{ flex:1; height:3px; background:rgba(255,255,255,.25); border-radius:2px; overflow:hidden; }
+.barDiv p{ height:100%; background:#fff; }
+
+/* ----- Search box ----- */
+.tripPlanArea{ position:relative; margin-top:-140px; }
+.tripPlanArea .ai-banner{ max-width:var(--max); margin:0 auto 14px; padding:0 16px; }
+.browseBox{ max-width:var(--max); margin:0 auto; padding:24px; border-radius:22px; background:#fff; box-shadow:0 10px 40px rgba(0,0,0,.18); color:var(--text); }
+.tripPlan{ display:flex; align-items:center; gap:16px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+.tripPlan .tit{ font-weight:700; color:var(--mute); padding:8px 10px; border-radius:8px; }
+.tripPlan .tit.on{ color:var(--black); background:#f4f5f7; }
+.filterCheck{ margin-left:auto; }
+.chkBox{ display:flex; align-items:center; gap:8px; color:var(--mute); }
+
+.tabCon{ padding-top:16px; }
+.tripPlanCon .infoDiv{ display:grid; grid-template-columns: 1fr min-content 1fr; gap:14px; align-items:center; }
+.tripPlanCon .info{ display:flex; align-items:center; gap:12px; }
+.iTxt{ display:flex; align-items:center; gap:8px; height:56px; padding:0 16px; border:1px solid var(--line); border-radius:12px; background:#fafbfc; flex:1; }
+.iTxt input{ width:100%; border:0; background:transparent; font-size:1rem; outline:none; color:#111; }
+.midIcon{ display:inline-flex; align-items:center; justify-content:center; width:40px; color:#999; }
+.midIcon.round{ width:40px; height:40px; border-radius:20px; background:#f0f1f4; }
+.icon.find{ width:56px; height:56px; margin-left:14px; border-radius:14px; background:#111; }
+.when .iTxt, .whom .iTxt{ min-width:0; }
+.depaDate .placeholder, .arriDate .placeholder{ color:#999; }
+
+/* ----- Recommend ----- */
+.recommendD{ padding:80px 0; background:#fff; color:var(--text); }
+.recommendD .inner{ max-width:var(--max); margin:0 auto; padding:0 16px; }
+.textMotionD{ position:relative; margin-bottom:28px; }
+.textMotionD .motionTit p{ font-size:2rem; font-weight:800; line-height:1.25; }
+.textMotionD .motionTit p span{ font-weight:800; }
+.textMotionD .line{ position:absolute; bottom:-10px; left:0; width:120px; height:3px; background:#111; }
+.listDiv{ display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:34px; }
+.list{ display:block; }
+.motion{ position:relative; border-radius:18px; overflow:hidden; background:#000; color:#fff; cursor:default; }
+.motion .img img{ width:100%; height:220px; object-fit:cover; opacity:.9; transition: transform .5s ease; }
+.motion:hover .img img{ transform:scale(1.05); }
+.txtArea{ position:absolute; left:0; right:0; bottom:0; padding:16px; background:linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.65) 100%); }
+.txtArea .country{ font-size:1.2rem; font-weight:700; }
+.txtArea .price{ margin-top:2px; opacity:.9; }
+.hover{ position:absolute; inset:0; padding:18px; display:flex; flex-direction:column; justify-content:flex-end; gap:4px; background:linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.75) 100%); opacity:0; transition:opacity .3s ease; }
+.motion:hover .hover{ opacity:1; }
+
+/* ----- Promotion ----- */
+.promotionD{ background:#f7f8fa; padding:80px 0; }
+.promotionD .inner{ max-width:var(--max); margin:0 auto; padding:0 16px; }
+.promotionD .textMotionD .line{ position:absolute; bottom:-10px; left:0; width:140px; height:3px; background:#111; }
+.promotionD .viewMore{ position:absolute; right:0; top:0; width:40px; height:40px; background:#111; border-radius:50%; }
+.topD{ display:grid; grid-template-columns: 1fr 320px; gap:18px; align-items:start; margin-top:36px; }
+.visualD .visual img{ width:100%; height:480px; object-fit:cover; border-radius:18px; }
+.tabs{ display:grid; grid-template-columns:1fr; gap:10px; }
+.tabs a{ display:flex; gap:10px; align-items:center; padding:8px; border-radius:12px; background:#fff; border:1px solid #eee; }
+.tabs a.on{ border-color:#111; }
+.tabs .thumb img{ width:80px; height:60px; object-fit:cover; border-radius:8px; }
+.bottomD{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:22px; }
+.bottomD .motion img{ width:100%; height:400px; object-fit:cover; border-radius:18px; }
+
+/* ----- Notice & QnA ----- */
+.noticeD{ padding:80px 0; background:#fff; }
+.noticeD .inner{ max-width:var(--max); margin:0 auto; padding:0 16px; display:grid; grid-template-columns: 1fr 1fr; gap:40px; }
+.area{ position:relative; }
+.area .title{ font-size:1.6rem; font-weight:800; }
+.area .line{ width:64px; height:3px; background:#111; margin-top:8px; }
+.area .viewMore{ position:absolute; right:0; top:0; width:40px; height:40px; background:#111; border-radius:50%; }
+.area .listDiv{ display:flex; flex-direction:column; margin-top:18px; }
+.area .list{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; border-bottom:1px solid var(--line); gap:16px; }
+.area .tit{ font-weight:600; color:#333; }
+.area .date{ color:#888; font-style:normal; }
+.qnaDiv .type{ display:inline-flex; align-items:center; min-width:72px; height:28px; padding:0 10px; background:#111; color:#fff; border-radius:999px; font-size:.8rem; margin-right:8px; }
+.qnaDiv .txt{ flex:1; color:#333; }
+
+/* ----- Footer ----- */
+.footer{ background:#111; color:#ddd; padding:48px 0; }
+.footer .inner{ max-width:var(--max); margin:0 auto; padding:0 16px; }
+.footer .inquiryD p{ color:#bbb; }
+.footer .callCenter{ font-style:normal; font-weight:800; margin:0 4px; }
+.footUtill{ display:flex; flex-wrap:wrap; gap:16px; margin:18px 0; }
+.footUtill a{ color:#bbb; }
+.footUtill a.bold{ color:#fff; font-weight:700; }
+.infoD{ display:flex; flex-direction:column; gap:6px; color:#999; }
+.footLogo{ width:160px; height:20px; background:linear-gradient(90deg,#fff,#aaa); opacity:.5; border-radius:2px; }
+.copy{ margin-top:14px; color:#8a8a8a; font-size:.9rem; }
+.copy .csMail{ color:#d2d2d2; margin-right:8px; }
+
+/* ----- Responsive ----- */
+@media (max-width: 1200px){
+  .topD{ grid-template-columns:1fr; }
+}
+@media (max-width: 1024px){
+  .listDiv{ grid-template-columns: repeat(2, 1fr); }
+  .bottomD .motion img{ height:280px; }
+  .visualD .visual img{ height:360px; }
+  .frame{ height:280px; }
+}
+@media (max-width: 768px){
+  .header{ gap:14px; padding:0 16px; }
+  .gnb{ display:none; }
+  .tripPlanCon .infoDiv{ grid-template-columns: 1fr; }
+  .icon.find{ width:100%; height:48px; border-radius:10px; margin:10px 0 0; }
+  .noticeD .inner{ grid-template-columns: 1fr; }
+}
+</style>
